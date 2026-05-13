@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outil d&#x27;Optimisation de Profil LinkedIn pour Jeunes Diplômés | Votre Tremplin Carrière : Le Profil LinkedIn Idéal</title>
+    <meta name="description" content="Analysez et améliorez votre profil LinkedIn pour maximiser la visibilité auprès des recruteurs en France, avec des conseils ciblés pour jeunes diplômés.">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap');
+
+        :root {
+            --color-primary: #34495e; /* Dark Blue Grey */
+            --color-secondary: #e74c3c; /* Red Orange */
+            --color-text-dark: #2c3e50; /* Very Dark Blue Grey */
+            --color-text-light: #ecf0f1; /* Light Grey */
+            --color-background: #f9f9f9; /* Off-White */
+            --color-panel: #ffffff; /* White */
+            --color-border: #bdc3c7; /* Silver */
+            --font-serif: 'Playfair Display', serif;
+            --font-sans: 'Roboto', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            color: var(--color-text-dark);
+            background-color: var(--color-background);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: var(--color-primary);
+            color: var(--color-text-light);
+            padding: 2.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-family: var(--font-serif);
+            font-size: 3rem;
+            margin: 0;
+            padding-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0.5rem auto 0;
+            opacity: 0.9;
+        }
+
+        .container {
+            display: flex;
+            flex-grow: 1;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+            gap: 2rem;
+            box-sizing: border-box;
+        }
+
+        .main-content {
+            flex: 2;
+            background-color: var(--color-panel);
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border: 1px solid var(--color-border);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: var(--color-panel);
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border: 1px solid var(--color-border);
+        }
+
+        h2 {
+            font-family: var(--font-serif);
+            font-size: 2.2rem;
+            color: var(--color-primary);
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .sidebar h3 {
+            font-family: var(--font-serif);
+            font-size: 1.6rem;
+            color: var(--color-primary);
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        label {
+            font-weight: 500;
+            margin-bottom: 0.4rem;
+            display: block;
+            color: var(--color-text-dark);
+            font-size: 1.1rem;
+        }
+
+        textarea, input[type="text"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        textarea:focus, input[type="text"]:focus {
+            border-color: var(--color-secondary);
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(231, 76, 60, 0.2);
+        }
+
+        button {
+            background-color: var(--color-secondary);
+            color: var(--color-text-light);
+            padding: 14px 25px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.15rem;
+            font-weight: 500;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            align-self: flex-start;
+            margin-top: 1rem;
+        }
+
+        button:hover {
+            background-color: #c0392b;
+            transform: translateY(-2px);
+        }
+
+        .result-section {
+            margin-top: 2.5rem;
+            padding-top: 2rem;
+            border-top: 1px dashed var(--color-border);
+        }
+
+        .result-section h3 {
+            font-family: var(--font-serif);
+            font-size: 1.8rem;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .result-section p {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        .result-section ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 1.5rem;
+        }
+
+        .result-section ul li {
+            background-color: #f0f4f7;
+            padding: 12px 20px;
+            margin-bottom: 8px;
+            border-radius: 6px;
+            border-left: 4px solid var(--color-secondary);
+            font-size: 1.1rem;
+            color: var(--color-text-dark);
+            display: flex;
+            align-items: center;
+        }
+
+        .result-section ul li strong {
+            color: var(--color-primary);
+            margin-right: 8px;
+            font-weight: 500;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 2rem;
+            justify-content: center;
+        }
+
+        .cta-buttons .cta-button {
+            background-color: var(--color-primary);
+            color: var(--color-text-light);
+            padding: 12px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-size: 1rem;
+        }
+
+        .cta-buttons .cta-button:hover {
+            background-color: #2c3e50;
+            transform: translateY(-2px);
+        }
+
+        .seo-section {
+            background-color: var(--color-primary);
+            color: var(--color-text-light);
+            padding: 3rem 1.5rem;
+            text-align: center;
+            margin-top: 4rem;
+            box-shadow: inset 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .seo-section h2 {
+            color: var(--color-text-light);
+            font-family: var(--font-serif);
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .seo-section p {
+            max-width: 900px;
+            margin: 0 auto 1.5rem;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .seo-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+            max-width: 900px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.8rem;
+        }
+
+        .seo-section ul li {
+            background-color: rgba(255,255,255,0.1);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            color: var(--color-text-light);
+        }
+
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+                margin: 1.5rem auto;
+            }
+            .main-content, .sidebar {
+                padding: 2rem;
+            }
+            header h1 {
+                font-size: 2.5rem;
+            }
+            header p {
+                font-size: 1rem;
+                padding: 0 1rem;
+            }
+            button {
+                align-self: stretch;
+            }
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .main-content, .sidebar {
+                padding: 1.5rem;
+            }
+            h2 {
+                font-size: 1.8rem;
+            }
+            .sidebar h3 {
+                font-size: 1.4rem;
+            }
+            .cta-buttons {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .cta-buttons .cta-button {
+                width: 100%;
+                text-align: center;
+            }
+            .seo-section h2 {
+                font-size: 2rem;
+            }
+            .seo-section p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://outil-d-optimisation-de-profil-linkedin-pour-je-4f98b4f0.onrender.com">
+    <meta property="og:title" content="Outil d&#x27;Optimisation de Profil LinkedIn pour Jeunes Diplômés">
+    <meta property="og:description" content="Analysez et améliorez votre profil LinkedIn pour maximiser la visibilité auprès des recruteurs en France, avec des conseils ciblés pour jeunes diplômés.">
+    <meta property="og:url" content="https://outil-d-optimisation-de-profil-linkedin-pour-je-4f98b4f0.onrender.com">
+    <meta property="og:type" content="website">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Outil d'Optimisation de Profil LinkedIn pour Jeunes Diplômés", "description": "Analysez et améliorez votre profil LinkedIn pour maximiser la visibilité auprès des recruteurs en France, avec des conseils ciblés pour jeunes diplômés.", "url": "https://outil-d-optimisation-de-profil-linkedin-pour-je-4f98b4f0.onrender.com", "applicationCategory": "UtilityApplication", "operatingSystem": "Web Browser"}</script>
+</head>
+<body data-site-slug="outil-d-optimisation-de-profil-linkedin-pour-je-4f98b4f0" data-runtime-mode="profile_generator">
+    <header>
+        <h1>Outil d'Optimisation de Profil LinkedIn</h1>
+        <p>Jeunes diplômés, maximisez votre impact auprès des recruteurs en France. Analysez et améliorez votre profil pour un premier emploi réussi.</p>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <h2>Votre Tremplin Carrière : Le Profil LinkedIn Idéal</h2>
+            <p>Dans un marché du travail compétitif, surtout pour les jeunes diplômés, un profil LinkedIn bien structuré et percutant est votre meilleur atout. Cet outil vous aide à peaufiner chaque section pour attirer l'attention des recruteurs français.</p>
+
+            <form id="tool-form">
+                <section>
+                    <label for="headline">Titre Professionnel Actuel (Headline LinkedIn)</label>
+                    <input type="text" id="headline" placeholder="Ex: Étudiant en Master Marketing Digital | Recherche stage de fin d'études">
+                    <small>Quelques mots clés stratégiques qui décrivent votre situation actuelle et vos aspirations.</small>
+                </section>
+
+                <section>
+                    <label for="summary">Résumé (Section "Info")</label>
+                    <textarea id="summary" placeholder="Présentez-vous en 3-5 phrases : votre parcours, vos compétences clés, vos objectifs professionnels et ce que vous recherchez."></textarea>
+                    <small>Mettez en avant votre "pitch" professionnel, même sans expérience.</small>
+                </section>
+
+                <section>
+                    <label for="experience">Expériences (Stages, Projets Académiques, Bénévolat)</label>
+                    <textarea id="experience" placeholder="Décrivez vos expériences les plus pertinentes (stages, projets universitaires significatifs, associations, jobs étudiants). Mettez l'accent sur les compétences acquises et les résultats, même modestes."></textarea>
+                    <small>Utilisez des verbes d'action et des chiffres si possible. Ex: "Géré la communication..."</small>
+                </section>
+
+                <section>
+                    <label for="skills">Compétences Clés</label>
+                    <input type="text" id="skills" placeholder="Listez 5 à 10 compétences techniques et comportementales (soft skills). Ex: Marketing Digital, Gestion de projet, Communication, Analyse de données, Adaptabilité, Esprit d'équipe">
+                    <small>Pensez aux compétences recherchées dans votre secteur et par les entreprises que vous ciblez.</small>
+                </section>
+
+                <section>
+                    <label for="education">Formation</label>
+                    <input type="text" id="education" placeholder="Ex: Master en Marketing (Bac+5), Université Paris-Dauphine (2023) | Licence Économie-Gestion, Sorbonne Université (2020)">
+                    <small>Détaillez votre parcours académique et mettez en avant les distinctions ou projets majeurs.</small>
+                </section>
+
+                <button type="submit" id="tool-submit">Optimiser mon Profil LinkedIn</button>
+            </form>
+
+            <div id="tool-result" class="result-section" style="display: none;">
+                <h3 id="result-headline">Votre Analyse Personnalisée</h3>
+                <p>Voici les recommandations clés et des exemples de titres optimisés pour votre profil, basés sur les informations fournies. Mettez en œuvre ces conseils pour maximiser votre visibilité !</p>
+
+                <h4>Titre Professionnel (Headline) : Suggestions pour l'Impact</h4>
+                <ul id="headline-suggestions"></ul>
+
+                <h4>Résumé (Section "Info") : Points à Améliorer</h4>
+                <ul id="summary-feedback"></ul>
+
+                <h4>Expériences : Comment les Valoriser</h4>
+                <ul id="experience-feedback"></ul>
+
+                <h4>Compétences : La Stratégie GAGNANTE</h4>
+                <ul id="skills-feedback"></ul>
+
+                <h4>Formation : Comment la Rendre Imparable</h4>
+                <ul id="education-feedback"></ul>
+
+                <div class="cta-buttons">
+                    <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer" class="cta-button" data-affiliate-slot="linkedin-profile-edit">Modifier mon Profil LinkedIn</a>
+                    <a href="#" class="cta-button" data-affiliate-slot="download-guide">Télécharger le Guide Complet (PDF)</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <h3>Pourquoi un LinkedIn optimisé ?</h3>
+            <p>Pour un jeune diplômé en France, LinkedIn n'est pas juste un CV en ligne, c'est votre carte de visite professionnelle digitale. <strong>80% des recruteurs</strong> utilisent LinkedIn pour sourcer des candidats. Un profil complet et optimisé vous permet de :</p>
+            <ul>
+                <li><strong>Être trouvé :</strong> Les mots clés agissent comme des balises pour les recruteurs.</li>
+                <li><strong>Faire bonne impression :</strong> Un profil clair et structuré reflète votre professionnalisme.</li>
+                <li><strong>Élargir votre réseau :</strong> Connectez-vous avec des professionnels de votre secteur.</li>
+                <li><strong>Décrocher plus d'entretiens :</strong> C'est la première impression avant même le CV.</li>
+            </ul>
+            <p><strong>N'oubliez pas :</strong> la personnalisation et la cohérence sont essentielles. Votre profil doit raconter votre histoire professionnelle, même si elle débute !</p>
+        </div>
+    </div>
+
+    <div class="seo-section">
+        <h2>Recherche d'Emploi en France : Optimisez Votre Visibilité</h2>
+        <p>Vous êtes un jeune diplômé à la recherche de votre premier emploi ou d'un stage en France ? Maximiser l'impact de votre profil LinkedIn est crucial. Notre outil vous aide à structurer, rédiger et améliorer chaque section pour attirer les recruteurs.</p>
+        <ul>
+            <li>Optimisation profil LinkedIn jeune diplômé France</li>
+            <li>Conseils LinkedIn premier emploi français</li>
+            <li>Améliorer profil LinkedIn stage France</li>
+            <li>Visibilité recruteur LinkedIn France</li>
+            <li>Exemple headline LinkedIn étudiant</li>
+            <li>Rédiger résumé LinkedIn sans expérience</li>
+            <li>Mots clés LinkedIn emploi junior</li>
+            <li>Guide LinkedIn recherche emploi France</li>
+            <li>Booster son profil LinkedIn pour stage</li>
+            <li>Conseils carrière jeune diplômé LinkedIn</li>
+        </ul>
+    </div>
+
+    <script>
+        document.getElementById('tool-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const headline = document.getElementById('headline').value.trim();
+            const summary = document.getElementById('summary').value.trim();
+            const experience = document.getElementById('experience').value.trim();
+            const skills = document.getElementById('skills').value.trim();
+            const education = document.getElementById('education').value.trim();
+
+            const headlineSuggestions = document.getElementById('headline-suggestions');
+            const summaryFeedback = document.getElementById('summary-feedback');
+            const experienceFeedback = document.getElementById('experience-feedback');
+            const skillsFeedback = document.getElementById('skills-feedback');
+            const educationFeedback = document.getElementById('education-feedback');
+
+            headlineSuggestions.innerHTML = '';
+            summaryFeedback.innerHTML = '';
+            experienceFeedback.innerHTML = '';
+            skillsFeedback.innerHTML = '';
+            educationFeedback.innerHTML = '';
+
+            // Headline Suggestions
+            let currentHeadlineAnalysis = "";
+            if (headline.length < 30) {
+                currentHeadlineAnalysis = "Votre titre est un peu court, pensez à y inclure plus de mots clés.";
+            } else if (!/(stage|alternance|junior|recherche|opportunité|débutant)/i.test(headline)) {
+                currentHeadlineAnalysis = "Assurez-vous d'indiquer clairement votre statut de jeune diplômé/étudiant recherchant une opportunité.";
+            } else {
+                currentHeadlineAnalysis = "Votre titre est sur la bonne voie !";
+            }
+
+            const genericKeywords = "Master en [Votre Domaine] | Recherche Stage/1er Emploi en [Votre Secteur]";
+            const actionKeywords = "Futur [Titre du Poste Visé] | Passionné par [Votre Domaine d'Intérêt] | En quête d'opportunités";
+            const skillKeywords = "Étudiant [Niveau d'Études] en [Domaine] | Compétences en [Compétence 1], [Compétence 2] | Proactif et Motivé";
+
+            headlineSuggestions.innerHTML += `<li><strong>Analyse de votre titre :</strong> ${currentHeadlineAnalysis}</li>`;
+            headlineSuggestions.innerHTML += `<li><strong>Style SEO :</strong> "Étudiant en ${education.split(',')[0] || "Votre Domaine"} | Recherche Stage/1er Emploi en ${headline.split('|')[1]?.trim() || "Votre Secteur"} | Disponible dès [Mois/Année]"</li>`;
+            headlineSuggestions.innerHTML += `<li><strong>Style Direct :</strong> "Jeune Diplômé ${education.split(',')[0] || "Votre Domaine"} | Prêt à relever les défis en [Votre Secteur]"</li>`;
+            headlineSuggestions.innerHTML += `<li><strong>Style Passionné :</strong> "Futur [Poste Rêvé] | Fervent de [Votre Domaine] | Impatient de transformer les idées en impact."</li>`;
+            headlineSuggestions.innerHTML += `<li><strong>Style Compétences :</strong> "Diplômé ${education.split(',')[0] || "Votre Domaine"} | Expertise en ${skills.split(',')[0] || "Compétence Clé"} | Recherche poste junior/stage"</li>`;
+
+            // Summary Feedback
+            if (summary.length < 150) {
+                summaryFeedback.innerHTML += `<li><strong>Augmentez la longueur :</strong> Votre résumé est un peu court. Essayez d'atteindre au moins 3-5 phrases pour présenter votre parcours, vos compétences et vos objectifs.</li>`;
+            }
+            if (!/(stage|alternance|premier emploi|opportunité)/i.test(summary)) {
+                summaryFeedback.innerHTML += `<li><strong>Précisez vos objectifs :</strong> Indiquez clairement le type d'opportunité que vous recherchez (stage, premier emploi, alternance) et dans quel secteur.</li>`;
+            }
+            if (!/(motivé|proactif|apprendre|curieux|dynamique)/i.test(summary)) {
+                summaryFeedback.innerHTML += `<li><strong>Mettez en avant vos soft skills :</strong> Soulignez vos qualités personnelles pertinentes pour le monde professionnel (proactivité, curiosité, esprit d'équipe, etc.).</li>`;
+            }
+            if (summaryFeedback.innerHTML === '') {
+                summaryFeedback.innerHTML += `<li>Excellent ! Votre résumé est complet et met bien en avant votre potentiel.</li>`;
+            }
+
+            // Experience Feedback
+            if (experience.length < 100) {
+                experienceFeedback.innerHTML += `<li><strong>Détaillez davantage :</strong> Même sans expérience professionnelle "classique", valorisez vos projets académiques, bénévolat, jobs d'été. Décrivez les tâches et les résultats obtenus.</li>`;
+            }
+            if (!/(géré|créé|développé|analysé|optimisé|participé|contribué)/i.test(experience)) {
+                experienceFeedback.innerHTML += `<li><strong>Utilisez des verbes d'action :</strong> Commencez vos phrases par des verbes dynamiques pour montrer votre implication (ex: "Géré la communication de...", "Développé un prototype de...").</li>`;
+            }
+            if (!/([0-9]+%|[0-9]+\s(personne|client|projet|euro))/i.test(experience)) {
+                experienceFeedback.innerHTML += `<li><strong>Quantifiez vos réalisations :</strong> Si possible, ajoutez des chiffres pour illustrer l'impact de vos actions (ex: "Augmentation de 15%...", "Géré une équipe de 3 personnes...").</li>`;
+            }
+            if (experienceFeedback.innerHTML === '') {
+                experienceFeedback.innerHTML += `<li>Très bien ! Vos expériences sont valorisées avec des verbes d'action et des détails concrets.</li>`;
+            }
+
+            // Skills Feedback
+            const skillsArray = skills.split(',').map(s => s.trim().toLowerCase()).filter(s => s.length > 0);
+            if (skillsArray.length < 5) {
+                skillsFeedback.innerHTML += `<li><strong>Étoffeez votre liste :</strong> Visez au moins 5 à 10 compétences pertinentes, mélangeant hard skills (techniques) et soft skills (comportementales).</li>`;
+            }
+            if (!skillsArray.some(s => /(communication|travail d'équipe|adaptabilité|résolution de problèmes|autonomie|esprit d'analyse)/i.test(s))) {
+                skillsFeedback.innerHTML += `<li><strong>Intégrez des Soft Skills :</strong> Les compétences comportementales sont très recherchées. Ajoutez des termes comme "Esprit d'équipe", "Adaptabilité", "Communication", "Proactivité".</li>`;
+            }
+            if (skillsFeedback.innerHTML === '') {
+                skillsFeedback.innerHTML += `<li>Excellent ! Vos compétences sont bien ciblées et diversifiées. Pensez à les faire valider par vos anciens professeurs ou collègues.</li>`;
+            }
+
+            // Education Feedback
+            if (education.length < 50) {
+                educationFeedback.innerHTML += `<li><strong>Détaillez votre formation :</strong> Indiquez clairement les diplômes, les dates, les établissements. Vous pouvez aussi mentionner des spécialisations ou des projets clés.</li>`;
+            }
+            if (!/(master|licence|école|université|diplôme)/i.test(education)) {
+                educationFeedback.innerHTML += `<li><strong>Utilisez les bons termes :</strong> Assurez-vous d'utiliser les appellations officielles de vos diplômes et établissements pour une meilleure reconnaissance.</li>`;
+            }
+            if (educationFeedback.innerHTML === '') {
+                educationFeedback.innerHTML += `<li>Parfait ! Votre section formation est claire et complète.</li>`;
+            }
+
+            document.getElementById('tool-result').style.display = 'block';
+            document.getElementById('tool-result').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+<div id="qa-smoke-result" hidden></div>
+<script id="farmbuilder-affiliate-helper">
+(function () {
+  window.__UTILITY_AFFILIATE_MAP = window.__UTILITY_AFFILIATE_MAP || {};
+  document.addEventListener("click", function (event) {
+    const target = event.target.closest("[data-affiliate-slot]");
+    if (!target) return;
+    const slot = target.getAttribute("data-affiliate-slot");
+    const href = window.__UTILITY_AFFILIATE_MAP[slot];
+    if (!href) return;
+    if (target.tagName && target.tagName.toLowerCase() === "a") {
+      target.setAttribute("href", href);
+      target.removeAttribute("rel");
+      return;
+    }
+    event.preventDefault();
+    window.open(href, "_blank");
+  }, true);
+})();
+</script>
+<script id="farmbuilder-functional-qa">
+(function () {
+  function marker() {
+    let node = document.getElementById("qa-smoke-result");
+    if (node) return node;
+    node = document.createElement("div");
+    node.id = "qa-smoke-result";
+    node.hidden = true;
+    document.body.appendChild(node);
+    return node;
+  }
+
+  let qaFinished = false;
+  let qaWatchdog = null;
+
+  function normalize(text) {
+    return String(text || "").replace(/\s+/g, " ").trim();
+  }
+
+  function findForm() {
+    return document.getElementById("tool-form") || document.querySelector("form");
+  }
+
+  function findResult() {
+    return (
+      document.getElementById("tool-result") ||
+      document.querySelector("[data-result]") ||
+      document.querySelector(".tool-result, .result-card, .result, .results, .output, .preview, .diagnostic, .analysis")
+    );
+  }
+
+  function primaryAction(form) {
+    if (!form) return null;
+    return (
+      document.getElementById("tool-submit") ||
+      form.querySelector("#tool-submit") ||
+      form.querySelector("[data-primary-action]") ||
+      form.querySelector("button[type=submit]") ||
+      form.querySelector("button") ||
+      form.querySelector("input[type=submit]")
+    );
+  }
+
+  function resultSignature(node) {
+    if (!node) return "";
+    const text = normalize(node.textContent);
+    const html = normalize(node.innerHTML).slice(0, 600);
+    return `${text}||${html}`;
+  }
+
+  function resultHeadline(node) {
+    if (!node) return "";
+    const heading = node.querySelector("h1, h2, h3, strong, b");
+    return normalize(heading ? heading.textContent : "");
+  }
+
+  function sampleText(field) {
+    const key = `${field.id || ""} ${field.name || ""} ${field.placeholder || ""}`.toLowerCase();
+    if (/email/.test(key)) return "bonjour@example.com";
+    if (/url|site|website|lien/.test(key)) return "https://example.com/offre-solaire";
+    if (/phone|tel|mobile/.test(key)) return "0612345678";
+    if (/ville|city|localisation|location|region|departement|postal/.test(key)) return "Paris";
+    if (/orientation/.test(key)) return "sud";
+    if (/keyword|theme|topic|sujet|subject/.test(key)) return "energie solaire domestique";
+    if (/titre|title/.test(key)) return "Simulateur solaire maison";
+    if (/nom|name|project/.test(key)) return "Projet Horizon";
+    if (/description|notes|content|message/.test(key)) return "Maison individuelle exposee sud avec toiture exploitable.";
+    return field.placeholder || "France";
+  }
+
+  function sampleNumber(field) {
+    const key = `${field.id || ""} ${field.name || ""}`.toLowerCase();
+    if (/inclinaison|angle|slope/.test(key)) return "30";
+    if (/surface|size|m2|sqm/.test(key)) return "28";
+    if (/annee|year/.test(key)) return "2024";
+    if (/prix|price|budget|cost|amount|montant/.test(key)) return "12000";
+    const min = Number(field.min || "");
+    const max = Number(field.max || "");
+    if (Number.isFinite(min) && Number.isFinite(max) && max >= min) {
+      return String(Math.min(max, Math.max(min, min + Math.round((max - min) * 0.35))));
+    }
+    if (Number.isFinite(min)) return String(Math.max(min, 12));
+    if (Number.isFinite(max)) return String(Math.min(max, 12));
+    return field.value || "12";
+  }
+
+  function applySample(field) {
+    const tag = (field.tagName || "").toLowerCase();
+    const type = (field.type || "").toLowerCase();
+    if (field.disabled) return;
+    if (type === "hidden" || type === "submit" || type === "button" || type === "reset" || type === "image" || type === "file") {
+      return;
+    }
+    const currentValue = normalize(field.value);
+    if (tag === "select") {
+      if (currentValue) return;
+      const option = Array.from(field.options || []).find((item) => item.value && !item.disabled) || field.options[0];
+      if (option) field.value = option.value;
+      return;
+    }
+    if (type === "checkbox") {
+      if (field.checked) return;
+      field.checked = true;
+      return;
+    }
+    if (type === "radio") {
+      if (field.checked) return;
+      field.checked = true;
+      return;
+    }
+    if (type === "date") {
+      if (currentValue) return;
+      field.value = "2026-03-01";
+      return;
+    }
+    if (type === "email") {
+      if (currentValue) return;
+      field.value = "bonjour@example.com";
+      return;
+    }
+    if (type === "url") {
+      if (currentValue) return;
+      field.value = "https://example.com/offre-solaire";
+      return;
+    }
+    if (type === "tel") {
+      if (currentValue) return;
+      field.value = "0612345678";
+      return;
+    }
+    if (type === "color") {
+      if (currentValue) return;
+      field.value = "#2f855a";
+      return;
+    }
+    if (type === "number" || type === "range") {
+      if (currentValue) return;
+      field.value = sampleNumber(field);
+      return;
+    }
+    if (currentValue) return;
+    field.value = sampleText(field);
+  }
+
+  function stamp(status, detail, headline, primary) {
+    if (qaFinished) return;
+    qaFinished = true;
+    if (qaWatchdog) {
+      window.clearTimeout(qaWatchdog);
+      qaWatchdog = null;
+    }
+    const node = marker();
+    node.dataset.status = status;
+    node.dataset.mode = "native-form";
+    node.dataset.detail = detail || "";
+    node.dataset.headline = headline || "";
+    node.dataset.primary = primary || "";
+    node.dataset.viewport = window.innerWidth <= 640 ? "mobile" : "desktop";
+    window.setTimeout(function () {
+      try {
+        window.stop();
+      } catch (_error) {}
+    }, 0);
+  }
+
+  function installModalGuards() {
+    const noop = function () {};
+    const approve = function () { return true; };
+    const empty = function () { return ""; };
+    try { window.alert = noop; } catch (_error) {}
+    try { window.confirm = approve; } catch (_error) {}
+    try { window.prompt = empty; } catch (_error) {}
+  }
+
+  function triggerAction(form, action) {
+    try {
+      if (typeof form.requestSubmit === "function") {
+        form.requestSubmit(action || undefined);
+        return;
+      }
+    } catch (_error) {}
+    if (action && typeof action.click === "function") {
+      action.click();
+      return;
+    }
+    form.dispatchEvent(new Event("submit", { bubbles: true, cancelable: true }));
+  }
+
+  function inspectResult(before, attemptsLeft) {
+    const result = findResult();
+    if (!result) {
+      stamp("fail", "La zone de resultat est introuvable.", "");
+      return;
+    }
+    const after = resultSignature(result);
+    const text = normalize(result.textContent);
+    if (after && after !== before && text.length >= 24) {
+      const primary = result.querySelector("a[href], button[data-href], [data-primary-url]") || document.querySelector("#tool-result a[href]");
+      stamp("pass", "Le formulaire natif a mis a jour la zone de resultat.", resultHeadline(result), primary ? (primary.getAttribute("href") || primary.getAttribute("data-primary-url") || "") : "");
+      return;
+    }
+    if (attemptsLeft > 0) {
+      window.setTimeout(function () {
+        inspectResult(before, attemptsLeft - 1);
+      }, 250);
+      return;
+    }
+    stamp("fail", "La zone de resultat n'a pas renvoye de contenu exploitable.", resultHeadline(result));
+  }
+
+  function runSmoke() {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("__qa") !== "functional") return;
+    qaWatchdog = window.setTimeout(function () {
+      stamp("fail", "QA smoke timed out before the page reported a usable result.", "");
+    }, 7000);
+    const form = findForm();
+    if (!form) {
+      stamp("fail", "Le formulaire principal est introuvable.", "");
+      return;
+    }
+    const result = findResult();
+    const before = resultSignature(result);
+    installModalGuards();
+    try {
+      form.querySelectorAll("input, select, textarea").forEach(applySample);
+    } catch (error) {
+      stamp("fail", error && error.message ? `QA smoke sample failed: ${error.message}` : "QA smoke sample failed before submit.", "");
+      return;
+    }
+    const action = primaryAction(form);
+    try {
+      triggerAction(form, action);
+    } catch (error) {
+      stamp("fail", error && error.message ? `QA smoke submit failed: ${error.message}` : "QA smoke submit failed.", "");
+      return;
+    }
+    inspectResult(before, 10);
+  }
+
+  window.addEventListener("error", function (event) {
+    const message = event && event.message ? event.message : "JavaScript runtime error during QA smoke.";
+    stamp("fail", `QA smoke JS error: ${message}`, "");
+  }, { once: true });
+
+  window.addEventListener("unhandledrejection", function (event) {
+    const reason = event && event.reason;
+    const detail = typeof reason === "string"
+      ? reason
+      : reason && reason.message
+        ? reason.message
+        : "Unhandled promise rejection during QA smoke.";
+    stamp("fail", `QA smoke rejection: ${detail}`, "");
+  }, { once: true });
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", function () {
+      window.setTimeout(runSmoke, 60);
+    }, { once: true });
+  } else {
+    window.setTimeout(runSmoke, 60);
+  }
+})();
+</script>
+</body>
+</html>
