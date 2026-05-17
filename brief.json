@@ -1,5 +1,5 @@
 {
-  "run_id": "run-1778632600707",
+  "run_id": "run-1779032623359",
   "job_index": 1,
   "params": {
     "owner_user_id": "user-1774822953462",
@@ -7,15 +7,18 @@
     "owner_display_name": "Administrator",
     "count": 1,
     "archetype": "tool",
-    "market": "France",
+    "market": "Growth republish",
     "language": "fr",
     "country": "FR",
-    "brief": "Un assistant intelligent pour structurer, rédiger et optimiser les sections clés d'un profil LinkedIn.",
-    "notes": "Analysez et améliorez un profil LinkedIn pour maximiser la visibilité auprès des recruteurs en France, avec des conseils ciblés pour jeunes diplômés.\nCible les étudiants et jeunes diplômés cherchant leur premier emploi en France. Focus sur la clarté et l'impact du contenu.\nAnalysez et améliorez un profil LinkedIn pour maximiser la visibilité auprès des recruteurs en France, avec des conseils ciblés pour jeunes diplômés.\nAnalysez et améliorez un profil LinkedIn pour maximiser la visibilité auprès des recruteurs en France, avec des conseils ciblés pour jeunes diplômés. Cible les étudiants et jeunes diplômés cherchant leur premier emploi en France. Focus sur la clarté et l'impact du contenu.",
-    "import_notes": "",
-    "growth_job_id": "",
-    "growth_slug": "",
-    "growth_kind": "",
+    "brief": "Analysez et améliorez votre profil LinkedIn pour maximiser la visibilité auprès des recruteurs en France, avec des conseils ciblés pour jeunes diplômés.",
+    "notes": "Growth module republish of an updated local artifact.",
+    "import_notes": "Growth module republish of an updated local artifact.",
+    "growth_job_id": "growth-1779032435734",
+    "growth_slug": "outil-d-optimisation-de-profil-linkedin-pour-je-4f98b4f0",
+    "growth_kind": "affiliate",
+    "external_site_request_id": "",
+    "external_client_ref": "",
+    "external_source_label": "",
     "dashboard_mode": "builder",
     "network_site_format": "forum",
     "network_primary_topic": "",
@@ -32,13 +35,14 @@
     "network_model_growth": "google/gemini-2.5-flash-lite:nitro",
     "network_blueprint_id": "",
     "mode": "production",
-    "run_kind": "generated_batch",
+    "run_kind": "import_deploy",
     "publish_target": "render",
     "requested_publish_target": "render",
+    "allow_url_fallback": false,
     "railway_project_id_override": "",
     "railway_environment_id_override": "",
-    "railway_service_id_override": "",
-    "railway_service_name_override": "",
+    "railway_service_id_override": "srv-d81sgjfaqgkc73cufr40",
+    "railway_service_name_override": "outil-d-optimisation-de-profil-linkedin-pour-je-4f98b4f0",
     "github_repo_private": true,
     "stage_models": {
       "ideation": "google/gemini-2.5-flash-lite:nitro",
@@ -47,257 +51,33 @@
       "qa": "anthropic/claude-haiku-4.5",
       "escalation": "anthropic/claude-sonnet-4.6"
     },
-    "archetype_display": "tool",
+    "archetype_display": "file deploy",
     "archetype_mix": [
-      "tool"
+      "imported"
     ],
-    "forced_design_theme": "kinetic-minimal",
-    "forced_structure_preset": "tool-first-rail",
+    "forced_slug": "outil-d-optimisation-de-profil-linkedin-pour-je-4f98b4f0",
     "site_idea_title": "Outil d'Optimisation de Profil LinkedIn pour Jeunes Diplômés",
-    "site_idea_summary": "Analysez et améliorez un profil LinkedIn pour maximiser la visibilité auprès des recruteurs en France, avec des conseils ciblés pour jeunes diplômés.",
-    "forced_slug": "outil-d-optimisation-de-profil-linkedin-pour-je-4f98b4f0"
+    "site_idea_summary": "Analysez et améliorez votre profil LinkedIn pour maximiser la visibilité auprès des recruteurs en France, avec des conseils ciblés pour jeunes diplômés.",
+    "import_source_path": "/var/lib/utility-site-studio/data/growth-republish/growth-1779032435734/outil-d-optimisation-de-profil-linkedin-pour-je-4f98b4f0",
+    "import_root_path": "/var/lib/utility-site-studio/data/growth-republish/growth-1779032435734/outil-d-optimisation-de-profil-linkedin-pour-je-4f98b4f0",
+    "import_analysis_model": "preserved-analysis"
   },
-  "site_spec": {
-    "slug": "outil-d-optimisation-de-profil-linkedin-pour-je-4f98b4f0",
-    "theme": {
-      "name": "Kinetic Minimal",
-      "slug": "kinetic-minimal",
-      "eyebrow": "Modern Motion",
-      "family": "kinetic-minimal",
-      "moods": [
-        "clean",
-        "kinetic",
-        "modern",
-        "friendly"
-      ],
-      "archetypes": [
-        "tool",
-        "generator"
-      ],
-      "niches": [
-        "content tools",
-        "text tools",
-        "creative utility",
-        "productivity",
-        "education"
-      ],
-      "keywords": [
-        "editor",
-        "generator",
-        "copy",
-        "writing",
-        "productivity"
-      ],
-      "token_index": [
-        "clean",
-        "content",
-        "copy",
-        "creative",
-        "editor",
-        "education",
-        "friendly",
-        "generator",
-        "kinetic",
-        "minimal",
-        "modern",
-        "motion",
-        "productivity",
-        "text",
-        "tool",
-        "tools",
-        "utility",
-        "writing"
-      ],
-      "font_embed": "https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap",
-      "display_font": "\"Syne\", sans-serif",
-      "body_font": "\"IBM Plex Sans\", sans-serif",
-      "layout": "editorial",
-      "card_style": "glass",
-      "button_style": "outline",
-      "decor_style": "ribbons",
-      "hero_template": "1fr",
-      "seo_template": "1fr",
-      "feature_columns": 2,
-      "faq_columns": 2,
-      "hero_min_height": "70vh",
-      "panel_radius": "28px",
-      "card_radius": "26px",
-      "chip_radius": "999px",
-      "button_radius": "18px",
-      "outline_width": "1px",
-      "backdrop_blur": "16px",
-      "palette": {
-        "bg": "linear-gradient(130deg, #fafaf9 0%, #eef2ff 48%, #f5f3ff 100%)",
-        "surface": "rgba(255,255,255,0.86)",
-        "surface_border": "rgba(39,39,42,0.1)",
-        "text": "#18181b",
-        "muted": "#52525b",
-        "accent": "#2563eb",
-        "accent_alt": "#7c3aed",
-        "hero_glow": "rgba(124, 58, 237, 0.12)",
-        "button_text": "#f8fafc",
-        "panel_alt": "rgba(255,255,255,0.72)",
-        "shadow": "0 28px 70px rgba(63, 63, 70, 0.1)",
-        "input_fill": "rgba(24,24,27,0.03)"
-      }
-    },
-    "structure": {
-      "name": "Tool First Rail",
-      "slug": "tool-first-rail",
-      "hero_variant": "tool-first",
-      "proof_variant": "checklist",
-      "section_order": [
-        "proof",
-        "features",
-        "seo",
-        "faq"
-      ],
-      "feature_columns": 2,
-      "faq_columns": 2,
-      "family": "interaction-forward",
-      "moods": [
-        "direct",
-        "practical",
-        "fast"
-      ],
-      "archetypes": [
-        "tool",
-        "calculator",
-        "generator"
-      ],
-      "niches": [
-        "qr",
-        "validators",
-        "quick utilities",
-        "lead tools"
-      ],
-      "keywords": [
-        "interaction",
-        "fast",
-        "widget",
-        "action"
-      ],
-      "token_index": [
-        "action",
-        "calculator",
-        "checklist",
-        "direct",
-        "faq",
-        "fast",
-        "features",
-        "first",
-        "forward",
-        "generator",
-        "interaction",
-        "lead",
-        "practical",
-        "proof",
-        "quick",
-        "rail",
-        "seo",
-        "tool",
-        "tools",
-        "utilities",
-        "validators",
-        "widget"
-      ]
-    },
-    "render_direction": "studio-split",
-    "render_direction_name": "Studio Split",
-    "page_blueprint": "campaign-mosaic",
-    "page_blueprint_name": "Campaign Mosaic",
+  "import_analysis": {
     "title": "Outil d'Optimisation de Profil LinkedIn pour Jeunes Diplômés",
-    "tagline": "Votre Tremplin Carrière : Le Profil LinkedIn Idéal",
     "description": "Analysez et améliorez votre profil LinkedIn pour maximiser la visibilité auprès des recruteurs en France, avec des conseils ciblés pour jeunes diplômés.",
-    "feature_prefix": "Bloc",
-    "action": "Générer les profils",
-    "cta_primary": "Optimiser mon Profil LinkedIn",
-    "cta_secondary": "Consulter la FAQ",
-    "inputs": [
-      {
-        "id": "geo",
-        "label": "Ville ou région",
-        "type": "text",
-        "placeholder": "Lyon, Bordeaux, Lille",
-        "weight": 1.0
-      },
-      {
-        "id": "quantity",
-        "label": "Nombre de profils",
-        "type": "number",
-        "placeholder": "4",
-        "weight": 0.45
-      },
-      {
-        "id": "profile_type",
-        "label": "Type de profil",
-        "type": "select",
-        "options": [
-          {
-            "id": "customer",
-            "label": "Customer",
-            "multiplier": 1
-          },
-          {
-            "id": "b2b",
-            "label": "B2B",
-            "multiplier": 1
-          },
-          {
-            "id": "beta",
-            "label": "Beta tester",
-            "multiplier": 1
-          }
-        ],
-        "weight": 1.0
-      }
+    "summary": "Analysez et améliorez votre profil LinkedIn pour maximiser la visibilité auprès des recruteurs en France, avec des conseils ciblés pour jeunes diplômés.",
+    "notes": "Growth module republish of an updated local artifact.",
+    "archetype": "tool",
+    "language": "fr",
+    "country": "FR",
+    "market": "Growth republish",
+    "characteristics": [
+      "imported static site",
+      "ready file deploy",
+      "generator"
     ],
-    "hero_metrics": [
-      {
-        "value": "Studio Split",
-        "label": "Cadence"
-      },
-      {
-        "value": "3",
-        "label": "Entrées"
-      },
-      {
-        "value": "Profils générés",
-        "label": "Sortie"
-      }
-    ],
-    "trust_labels": [
-      "Studio Split",
-      "Optimiser mon Profil LinkedIn",
-      "Profils générés",
-      "Utilitaire immédiat",
-      "Structure SEO claire"
-    ],
-    "result_label": "Profils générés",
-    "result_unit": "",
-    "runtime_mode": "profile_generator",
-    "page_variant": "classic",
-    "faq_topic": "Outil d'Optimisation de Profil LinkedIn pour Jeunes Diplômés",
-    "faq_entries": [
-      {
-        "question": "Pourquoi utiliser cet outil pour Outil d'Optimisation de Profil LinkedIn pour Jeunes Diplômés ?",
-        "answer": "Il aide à cadrer le besoin rapidement et à orienter vers une prochaine action claire sur le marché France."
-      },
-      {
-        "question": "Le résultat est-il immédiat ?",
-        "answer": "Oui. L'interface est pensée pour une réponse rapide, lisible et exploitable dès la première interaction."
-      },
-      {
-        "question": "Cette page est-elle adaptée au SEO ?",
-        "answer": "Oui. La structure mélange utilité, clarté éditoriale et signaux de confiance sans surcharger l'expérience."
-      }
-    ],
-    "seo_paragraphs": [
-      "Cette page capte une intention forte autour de Outil d'Optimisation de Profil LinkedIn pour Jeunes Diplômés et la transforme en action utile pour un public situé sur France.",
-      "Le format hero-first accélère la compréhension, réduit les frictions et améliore la lisibilité sur mobile comme sur desktop.",
-      "Le socle reste volontairement simple pour faciliter les tests, la QA continue et les variations SEO."
-    ],
-    "document_html": "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Outil d&#x27;Optimisation de Profil LinkedIn pour Jeunes Diplômés | Votre Tremplin Carrière : Le Profil LinkedIn Idéal</title>\n    <meta name=\"description\" content=\"Analysez et améliorez votre profil LinkedIn pour maximiser la visibilité auprès des recruteurs en France, avec des conseils ciblés pour jeunes diplômés.\">\n    <style>\n        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap');\n\n        :root {\n            --color-primary: #34495e; /* Dark Blue Grey */\n            --color-secondary: #e74c3c; /* Red Orange */\n            --color-text-dark: #2c3e50; /* Very Dark Blue Grey */\n            --color-text-light: #ecf0f1; /* Light Grey */\n            --color-background: #f9f9f9; /* Off-White */\n            --color-panel: #ffffff; /* White */\n            --color-border: #bdc3c7; /* Silver */\n            --font-serif: 'Playfair Display', serif;\n            --font-sans: 'Roboto', sans-serif;\n        }\n\n        body {\n            font-family: var(--font-sans);\n            line-height: 1.6;\n            color: var(--color-text-dark);\n            background-color: var(--color-background);\n            margin: 0;\n            padding: 0;\n            display: flex;\n            flex-direction: column;\n            min-height: 100vh;\n        }\n\n        header {\n            background-color: var(--color-primary);\n            color: var(--color-text-light);\n            padding: 2.5rem 0;\n            text-align: center;\n            box-shadow: 0 4px 8px rgba(0,0,0,0.1);\n        }\n\n        header h1 {\n            font-family: var(--font-serif);\n            font-size: 3rem;\n            margin: 0;\n            padding-bottom: 0.5rem;\n        }\n\n        header p {\n            font-size: 1.2rem;\n            max-width: 800px;\n            margin: 0.5rem auto 0;\n            opacity: 0.9;\n        }\n\n        .container {\n            display: flex;\n            flex-grow: 1;\n            max-width: 1200px;\n            margin: 2rem auto;\n            padding: 0 1.5rem;\n            gap: 2rem;\n            box-sizing: border-box;\n        }\n\n        .main-content {\n            flex: 2;\n            background-color: var(--color-panel);\n            padding: 2.5rem;\n            border-radius: 8px;\n            box-shadow: 0 2px 10px rgba(0,0,0,0.05);\n            border: 1px solid var(--color-border);\n            display: flex;\n            flex-direction: column;\n        }\n\n        .sidebar {\n            flex: 1;\n            background-color: var(--color-panel);\n            padding: 2.5rem;\n            border-radius: 8px;\n            box-shadow: 0 2px 10px rgba(0,0,0,0.05);\n            border: 1px solid var(--color-border);\n        }\n\n        h2 {\n            font-family: var(--font-serif);\n            font-size: 2.2rem;\n            color: var(--color-primary);\n            margin-top: 0;\n            margin-bottom: 1.5rem;\n            text-align: center;\n        }\n\n        .sidebar h3 {\n            font-family: var(--font-serif);\n            font-size: 1.6rem;\n            color: var(--color-primary);\n            margin-top: 0;\n            margin-bottom: 1rem;\n        }\n\n        form {\n            display: flex;\n            flex-direction: column;\n            gap: 1.2rem;\n        }\n\n        label {\n            font-weight: 500;\n            margin-bottom: 0.4rem;\n            display: block;\n            color: var(--color-text-dark);\n            font-size: 1.1rem;\n        }\n\n        textarea, input[type=\"text\"] {\n            width: 100%;\n            padding: 12px 15px;\n            border: 1px solid var(--color-border);\n            border-radius: 6px;\n            box-sizing: border-box;\n            font-family: var(--font-sans);\n            font-size: 1rem;\n            resize: vertical;\n            min-height: 100px;\n        }\n\n        textarea:focus, input[type=\"text\"]:focus {\n            border-color: var(--color-secondary);\n            outline: none;\n            box-shadow: 0 0 0 2px rgba(231, 76, 60, 0.2);\n        }\n\n        button {\n            background-color: var(--color-secondary);\n            color: var(--color-text-light);\n            padding: 14px 25px;\n            border: none;\n            border-radius: 6px;\n            cursor: pointer;\n            font-size: 1.15rem;\n            font-weight: 500;\n            transition: background-color 0.3s ease, transform 0.2s ease;\n            align-self: flex-start;\n            margin-top: 1rem;\n        }\n\n        button:hover {\n            background-color: #c0392b;\n            transform: translateY(-2px);\n        }\n\n        .result-section {\n            margin-top: 2.5rem;\n            padding-top: 2rem;\n            border-top: 1px dashed var(--color-border);\n        }\n\n        .result-section h3 {\n            font-family: var(--font-serif);\n            font-size: 1.8rem;\n            color: var(--color-primary);\n            margin-bottom: 1rem;\n            text-align: center;\n        }\n\n        .result-section p {\n            margin-bottom: 1rem;\n            font-size: 1.05rem;\n            line-height: 1.7;\n        }\n\n        .result-section ul {\n            list-style-type: none;\n            padding-left: 0;\n            margin-bottom: 1.5rem;\n        }\n\n        .result-section ul li {\n            background-color: #f0f4f7;\n            padding: 12px 20px;\n            margin-bottom: 8px;\n            border-radius: 6px;\n            border-left: 4px solid var(--color-secondary);\n            font-size: 1.1rem;\n            color: var(--color-text-dark);\n            display: flex;\n            align-items: center;\n        }\n\n        .result-section ul li strong {\n            color: var(--color-primary);\n            margin-right: 8px;\n            font-weight: 500;\n        }\n\n        .cta-buttons {\n            display: flex;\n            gap: 1.5rem;\n            margin-top: 2rem;\n            justify-content: center;\n        }\n\n        .cta-buttons .cta-button {\n            background-color: var(--color-primary);\n            color: var(--color-text-light);\n            padding: 12px 20px;\n            border-radius: 6px;\n            text-decoration: none;\n            font-weight: 500;\n            transition: background-color 0.3s ease, transform 0.2s ease;\n            font-size: 1rem;\n        }\n\n        .cta-buttons .cta-button:hover {\n            background-color: #2c3e50;\n            transform: translateY(-2px);\n        }\n\n        .seo-section {\n            background-color: var(--color-primary);\n            color: var(--color-text-light);\n            padding: 3rem 1.5rem;\n            text-align: center;\n            margin-top: 4rem;\n            box-shadow: inset 0 4px 8px rgba(0,0,0,0.1);\n        }\n\n        .seo-section h2 {\n            color: var(--color-text-light);\n            font-family: var(--font-serif);\n            font-size: 2.5rem;\n            margin-bottom: 1.5rem;\n        }\n\n        .seo-section p {\n            max-width: 900px;\n            margin: 0 auto 1.5rem;\n            font-size: 1.1rem;\n            opacity: 0.9;\n        }\n\n        .seo-section ul {\n            list-style: none;\n            padding: 0;\n            margin: 0 auto;\n            max-width: 900px;\n            display: flex;\n            flex-wrap: wrap;\n            justify-content: center;\n            gap: 0.8rem;\n        }\n\n        .seo-section ul li {\n            background-color: rgba(255,255,255,0.1);\n            padding: 8px 15px;\n            border-radius: 20px;\n            font-size: 0.95rem;\n            color: var(--color-text-light);\n        }\n\n        @media (max-width: 900px) {\n            .container {\n                flex-direction: column;\n                margin: 1.5rem auto;\n            }\n            .main-content, .sidebar {\n                padding: 2rem;\n            }\n            header h1 {\n                font-size: 2.5rem;\n            }\n            header p {\n                font-size: 1rem;\n                padding: 0 1rem;\n            }\n            button {\n                align-self: stretch;\n            }\n        }\n\n        @media (max-width: 600px) {\n            header h1 {\n                font-size: 2rem;\n            }\n            .main-content, .sidebar {\n                padding: 1.5rem;\n            }\n            h2 {\n                font-size: 1.8rem;\n            }\n            .sidebar h3 {\n                font-size: 1.4rem;\n            }\n            .cta-buttons {\n                flex-direction: column;\n                gap: 1rem;\n            }\n            .cta-buttons .cta-button {\n                width: 100%;\n                text-align: center;\n            }\n            .seo-section h2 {\n                font-size: 2rem;\n            }\n            .seo-section p {\n                font-size: 1rem;\n            }\n        }\n    </style>\n    <meta name=\"robots\" content=\"index, follow\">\n    <link rel=\"canonical\" href=\"https://outil-d-optimisation-de-profil-linkedin-pour-je-4f98b4f0.onrender.com\">\n    <meta property=\"og:title\" content=\"Outil d&#x27;Optimisation de Profil LinkedIn pour Jeunes Diplômés\">\n    <meta property=\"og:description\" content=\"Analysez et améliorez votre profil LinkedIn pour maximiser la visibilité auprès des recruteurs en France, avec des conseils ciblés pour jeunes diplômés.\">\n    <meta property=\"og:url\" content=\"https://outil-d-optimisation-de-profil-linkedin-pour-je-4f98b4f0.onrender.com\">\n    <meta property=\"og:type\" content=\"website\">\n    <script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"WebApplication\", \"name\": \"Outil d'Optimisation de Profil LinkedIn pour Jeunes Diplômés\", \"description\": \"Analysez et améliorez votre profil LinkedIn pour maximiser la visibilité auprès des recruteurs en France, avec des conseils ciblés pour jeunes diplômés.\", \"url\": \"https://outil-d-optimisation-de-profil-linkedin-pour-je-4f98b4f0.onrender.com\", \"applicationCategory\": \"UtilityApplication\", \"operatingSystem\": \"Web Browser\"}</script>\n</head>\n<body data-site-slug=\"outil-d-optimisation-de-profil-linkedin-pour-je-4f98b4f0\" data-runtime-mode=\"profile_generator\">\n    <header>\n        <h1>Outil d'Optimisation de Profil LinkedIn</h1>\n        <p>Jeunes diplômés, maximisez votre impact auprès des recruteurs en France. Analysez et améliorez votre profil pour un premier emploi réussi.</p>\n    </header>\n\n    <div class=\"container\">\n        <div class=\"main-content\">\n            <h2>Votre Tremplin Carrière : Le Profil LinkedIn Idéal</h2>\n            <p>Dans un marché du travail compétitif, surtout pour les jeunes diplômés, un profil LinkedIn bien structuré et percutant est votre meilleur atout. Cet outil vous aide à peaufiner chaque section pour attirer l'attention des recruteurs français.</p>\n\n            <form id=\"tool-form\">\n                <section>\n                    <label for=\"headline\">Titre Professionnel Actuel (Headline LinkedIn)</label>\n                    <input type=\"text\" id=\"headline\" placeholder=\"Ex: Étudiant en Master Marketing Digital | Recherche stage de fin d'études\">\n                    <small>Quelques mots clés stratégiques qui décrivent votre situation actuelle et vos aspirations.</small>\n                </section>\n\n                <section>\n                    <label for=\"summary\">Résumé (Section \"Info\")</label>\n                    <textarea id=\"summary\" placeholder=\"Présentez-vous en 3-5 phrases : votre parcours, vos compétences clés, vos objectifs professionnels et ce que vous recherchez.\"></textarea>\n                    <small>Mettez en avant votre \"pitch\" professionnel, même sans expérience.</small>\n                </section>\n\n                <section>\n                    <label for=\"experience\">Expériences (Stages, Projets Académiques, Bénévolat)</label>\n                    <textarea id=\"experience\" placeholder=\"Décrivez vos expériences les plus pertinentes (stages, projets universitaires significatifs, associations, jobs étudiants). Mettez l'accent sur les compétences acquises et les résultats, même modestes.\"></textarea>\n                    <small>Utilisez des verbes d'action et des chiffres si possible. Ex: \"Géré la communication...\"</small>\n                </section>\n\n                <section>\n                    <label for=\"skills\">Compétences Clés</label>\n                    <input type=\"text\" id=\"skills\" placeholder=\"Listez 5 à 10 compétences techniques et comportementales (soft skills). Ex: Marketing Digital, Gestion de projet, Communication, Analyse de données, Adaptabilité, Esprit d'équipe\">\n                    <small>Pensez aux compétences recherchées dans votre secteur et par les entreprises que vous ciblez.</small>\n                </section>\n\n                <section>\n                    <label for=\"education\">Formation</label>\n                    <input type=\"text\" id=\"education\" placeholder=\"Ex: Master en Marketing (Bac+5), Université Paris-Dauphine (2023) | Licence Économie-Gestion, Sorbonne Université (2020)\">\n                    <small>Détaillez votre parcours académique et mettez en avant les distinctions ou projets majeurs.</small>\n                </section>\n\n                <button type=\"submit\" id=\"tool-submit\">Optimiser mon Profil LinkedIn</button>\n            </form>\n\n            <div id=\"tool-result\" class=\"result-section\" style=\"display: none;\">\n                <h3 id=\"result-headline\">Votre Analyse Personnalisée</h3>\n                <p>Voici les recommandations clés et des exemples de titres optimisés pour votre profil, basés sur les informations fournies. Mettez en œuvre ces conseils pour maximiser votre visibilité !</p>\n\n                <h4>Titre Professionnel (Headline) : Suggestions pour l'Impact</h4>\n                <ul id=\"headline-suggestions\"></ul>\n\n                <h4>Résumé (Section \"Info\") : Points à Améliorer</h4>\n                <ul id=\"summary-feedback\"></ul>\n\n                <h4>Expériences : Comment les Valoriser</h4>\n                <ul id=\"experience-feedback\"></ul>\n\n                <h4>Compétences : La Stratégie GAGNANTE</h4>\n                <ul id=\"skills-feedback\"></ul>\n\n                <h4>Formation : Comment la Rendre Imparable</h4>\n                <ul id=\"education-feedback\"></ul>\n\n                <div class=\"cta-buttons\">\n                    <a href=\"https://www.linkedin.com/feed/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"cta-button\" data-affiliate-slot=\"linkedin-profile-edit\">Modifier mon Profil LinkedIn</a>\n                    <a href=\"#\" class=\"cta-button\" data-affiliate-slot=\"download-guide\">Télécharger le Guide Complet (PDF)</a>\n                </div>\n            </div>\n        </div>\n\n        <div class=\"sidebar\">\n            <h3>Pourquoi un LinkedIn optimisé ?</h3>\n            <p>Pour un jeune diplômé en France, LinkedIn n'est pas juste un CV en ligne, c'est votre carte de visite professionnelle digitale. <strong>80% des recruteurs</strong> utilisent LinkedIn pour sourcer des candidats. Un profil complet et optimisé vous permet de :</p>\n            <ul>\n                <li><strong>Être trouvé :</strong> Les mots clés agissent comme des balises pour les recruteurs.</li>\n                <li><strong>Faire bonne impression :</strong> Un profil clair et structuré reflète votre professionnalisme.</li>\n                <li><strong>Élargir votre réseau :</strong> Connectez-vous avec des professionnels de votre secteur.</li>\n                <li><strong>Décrocher plus d'entretiens :</strong> C'est la première impression avant même le CV.</li>\n            </ul>\n            <p><strong>N'oubliez pas :</strong> la personnalisation et la cohérence sont essentielles. Votre profil doit raconter votre histoire professionnelle, même si elle débute !</p>\n        </div>\n    </div>\n\n    <div class=\"seo-section\">\n        <h2>Recherche d'Emploi en France : Optimisez Votre Visibilité</h2>\n        <p>Vous êtes un jeune diplômé à la recherche de votre premier emploi ou d'un stage en France ? Maximiser l'impact de votre profil LinkedIn est crucial. Notre outil vous aide à structurer, rédiger et améliorer chaque section pour attirer les recruteurs.</p>\n        <ul>\n            <li>Optimisation profil LinkedIn jeune diplômé France</li>\n            <li>Conseils LinkedIn premier emploi français</li>\n            <li>Améliorer profil LinkedIn stage France</li>\n            <li>Visibilité recruteur LinkedIn France</li>\n            <li>Exemple headline LinkedIn étudiant</li>\n            <li>Rédiger résumé LinkedIn sans expérience</li>\n            <li>Mots clés LinkedIn emploi junior</li>\n            <li>Guide LinkedIn recherche emploi France</li>\n            <li>Booster son profil LinkedIn pour stage</li>\n            <li>Conseils carrière jeune diplômé LinkedIn</li>\n        </ul>\n    </div>\n\n    <script>\n        document.getElementById('tool-form').addEventListener('submit', function(e) {\n            e.preventDefault();\n\n            const headline = document.getElementById('headline').value.trim();\n            const summary = document.getElementById('summary').value.trim();\n            const experience = document.getElementById('experience').value.trim();\n            const skills = document.getElementById('skills').value.trim();\n            const education = document.getElementById('education').value.trim();\n\n            const headlineSuggestions = document.getElementById('headline-suggestions');\n            const summaryFeedback = document.getElementById('summary-feedback');\n            const experienceFeedback = document.getElementById('experience-feedback');\n            const skillsFeedback = document.getElementById('skills-feedback');\n            const educationFeedback = document.getElementById('education-feedback');\n\n            headlineSuggestions.innerHTML = '';\n            summaryFeedback.innerHTML = '';\n            experienceFeedback.innerHTML = '';\n            skillsFeedback.innerHTML = '';\n            educationFeedback.innerHTML = '';\n\n            // Headline Suggestions\n            let currentHeadlineAnalysis = \"\";\n            if (headline.length < 30) {\n                currentHeadlineAnalysis = \"Votre titre est un peu court, pensez à y inclure plus de mots clés.\";\n            } else if (!/(stage|alternance|junior|recherche|opportunité|débutant)/i.test(headline)) {\n                currentHeadlineAnalysis = \"Assurez-vous d'indiquer clairement votre statut de jeune diplômé/étudiant recherchant une opportunité.\";\n            } else {\n                currentHeadlineAnalysis = \"Votre titre est sur la bonne voie !\";\n            }\n\n            const genericKeywords = \"Master en [Votre Domaine] | Recherche Stage/1er Emploi en [Votre Secteur]\";\n            const actionKeywords = \"Futur [Titre du Poste Visé] | Passionné par [Votre Domaine d'Intérêt] | En quête d'opportunités\";\n            const skillKeywords = \"Étudiant [Niveau d'Études] en [Domaine] | Compétences en [Compétence 1], [Compétence 2] | Proactif et Motivé\";\n\n            headlineSuggestions.innerHTML += `<li><strong>Analyse de votre titre :</strong> ${currentHeadlineAnalysis}</li>`;\n            headlineSuggestions.innerHTML += `<li><strong>Style SEO :</strong> \"Étudiant en ${education.split(',')[0] || \"Votre Domaine\"} | Recherche Stage/1er Emploi en ${headline.split('|')[1]?.trim() || \"Votre Secteur\"} | Disponible dès [Mois/Année]\"</li>`;\n            headlineSuggestions.innerHTML += `<li><strong>Style Direct :</strong> \"Jeune Diplômé ${education.split(',')[0] || \"Votre Domaine\"} | Prêt à relever les défis en [Votre Secteur]\"</li>`;\n            headlineSuggestions.innerHTML += `<li><strong>Style Passionné :</strong> \"Futur [Poste Rêvé] | Fervent de [Votre Domaine] | Impatient de transformer les idées en impact.\"</li>`;\n            headlineSuggestions.innerHTML += `<li><strong>Style Compétences :</strong> \"Diplômé ${education.split(',')[0] || \"Votre Domaine\"} | Expertise en ${skills.split(',')[0] || \"Compétence Clé\"} | Recherche poste junior/stage\"</li>`;\n\n            // Summary Feedback\n            if (summary.length < 150) {\n                summaryFeedback.innerHTML += `<li><strong>Augmentez la longueur :</strong> Votre résumé est un peu court. Essayez d'atteindre au moins 3-5 phrases pour présenter votre parcours, vos compétences et vos objectifs.</li>`;\n            }\n            if (!/(stage|alternance|premier emploi|opportunité)/i.test(summary)) {\n                summaryFeedback.innerHTML += `<li><strong>Précisez vos objectifs :</strong> Indiquez clairement le type d'opportunité que vous recherchez (stage, premier emploi, alternance) et dans quel secteur.</li>`;\n            }\n            if (!/(motivé|proactif|apprendre|curieux|dynamique)/i.test(summary)) {\n                summaryFeedback.innerHTML += `<li><strong>Mettez en avant vos soft skills :</strong> Soulignez vos qualités personnelles pertinentes pour le monde professionnel (proactivité, curiosité, esprit d'équipe, etc.).</li>`;\n            }\n            if (summaryFeedback.innerHTML === '') {\n                summaryFeedback.innerHTML += `<li>Excellent ! Votre résumé est complet et met bien en avant votre potentiel.</li>`;\n            }\n\n            // Experience Feedback\n            if (experience.length < 100) {\n                experienceFeedback.innerHTML += `<li><strong>Détaillez davantage :</strong> Même sans expérience professionnelle \"classique\", valorisez vos projets académiques, bénévolat, jobs d'été. Décrivez les tâches et les résultats obtenus.</li>`;\n            }\n            if (!/(géré|créé|développé|analysé|optimisé|participé|contribué)/i.test(experience)) {\n                experienceFeedback.innerHTML += `<li><strong>Utilisez des verbes d'action :</strong> Commencez vos phrases par des verbes dynamiques pour montrer votre implication (ex: \"Géré la communication de...\", \"Développé un prototype de...\").</li>`;\n            }\n            if (!/([0-9]+%|[0-9]+\\s(personne|client|projet|euro))/i.test(experience)) {\n                experienceFeedback.innerHTML += `<li><strong>Quantifiez vos réalisations :</strong> Si possible, ajoutez des chiffres pour illustrer l'impact de vos actions (ex: \"Augmentation de 15%...\", \"Géré une équipe de 3 personnes...\").</li>`;\n            }\n            if (experienceFeedback.innerHTML === '') {\n                experienceFeedback.innerHTML += `<li>Très bien ! Vos expériences sont valorisées avec des verbes d'action et des détails concrets.</li>`;\n            }\n\n            // Skills Feedback\n            const skillsArray = skills.split(',').map(s => s.trim().toLowerCase()).filter(s => s.length > 0);\n            if (skillsArray.length < 5) {\n                skillsFeedback.innerHTML += `<li><strong>Étoffeez votre liste :</strong> Visez au moins 5 à 10 compétences pertinentes, mélangeant hard skills (techniques) et soft skills (comportementales).</li>`;\n            }\n            if (!skillsArray.some(s => /(communication|travail d'équipe|adaptabilité|résolution de problèmes|autonomie|esprit d'analyse)/i.test(s))) {\n                skillsFeedback.innerHTML += `<li><strong>Intégrez des Soft Skills :</strong> Les compétences comportementales sont très recherchées. Ajoutez des termes comme \"Esprit d'équipe\", \"Adaptabilité\", \"Communication\", \"Proactivité\".</li>`;\n            }\n            if (skillsFeedback.innerHTML === '') {\n                skillsFeedback.innerHTML += `<li>Excellent ! Vos compétences sont bien ciblées et diversifiées. Pensez à les faire valider par vos anciens professeurs ou collègues.</li>`;\n            }\n\n            // Education Feedback\n            if (education.length < 50) {\n                educationFeedback.innerHTML += `<li><strong>Détaillez votre formation :</strong> Indiquez clairement les diplômes, les dates, les établissements. Vous pouvez aussi mentionner des spécialisations ou des projets clés.</li>`;\n            }\n            if (!/(master|licence|école|université|diplôme)/i.test(education)) {\n                educationFeedback.innerHTML += `<li><strong>Utilisez les bons termes :</strong> Assurez-vous d'utiliser les appellations officielles de vos diplômes et établissements pour une meilleure reconnaissance.</li>`;\n            }\n            if (educationFeedback.innerHTML === '') {\n                educationFeedback.innerHTML += `<li>Parfait ! Votre section formation est claire et complète.</li>`;\n            }\n\n            document.getElementById('tool-result').style.display = 'block';\n            document.getElementById('tool-result').scrollIntoView({ behavior: 'smooth' });\n        });\n    </script>\n<div id=\"qa-smoke-result\" hidden></div>\n<script id=\"farmbuilder-affiliate-helper\">\n(function () {\n  window.__UTILITY_AFFILIATE_MAP = window.__UTILITY_AFFILIATE_MAP || {};\n  document.addEventListener(\"click\", function (event) {\n    const target = event.target.closest(\"[data-affiliate-slot]\");\n    if (!target) return;\n    const slot = target.getAttribute(\"data-affiliate-slot\");\n    const href = window.__UTILITY_AFFILIATE_MAP[slot];\n    if (!href) return;\n    if (target.tagName && target.tagName.toLowerCase() === \"a\") {\n      target.setAttribute(\"href\", href);\n      target.removeAttribute(\"rel\");\n      return;\n    }\n    event.preventDefault();\n    window.open(href, \"_blank\");\n  }, true);\n})();\n</script>\n<script id=\"farmbuilder-functional-qa\">\n(function () {\n  function marker() {\n    let node = document.getElementById(\"qa-smoke-result\");\n    if (node) return node;\n    node = document.createElement(\"div\");\n    node.id = \"qa-smoke-result\";\n    node.hidden = true;\n    document.body.appendChild(node);\n    return node;\n  }\n\n  let qaFinished = false;\n  let qaWatchdog = null;\n\n  function normalize(text) {\n    return String(text || \"\").replace(/\\s+/g, \" \").trim();\n  }\n\n  function findForm() {\n    return document.getElementById(\"tool-form\") || document.querySelector(\"form\");\n  }\n\n  function findResult() {\n    return (\n      document.getElementById(\"tool-result\") ||\n      document.querySelector(\"[data-result]\") ||\n      document.querySelector(\".tool-result, .result-card, .result, .results, .output, .preview, .diagnostic, .analysis\")\n    );\n  }\n\n  function primaryAction(form) {\n    if (!form) return null;\n    return (\n      document.getElementById(\"tool-submit\") ||\n      form.querySelector(\"#tool-submit\") ||\n      form.querySelector(\"[data-primary-action]\") ||\n      form.querySelector(\"button[type=submit]\") ||\n      form.querySelector(\"button\") ||\n      form.querySelector(\"input[type=submit]\")\n    );\n  }\n\n  function resultSignature(node) {\n    if (!node) return \"\";\n    const text = normalize(node.textContent);\n    const html = normalize(node.innerHTML).slice(0, 600);\n    return `${text}||${html}`;\n  }\n\n  function resultHeadline(node) {\n    if (!node) return \"\";\n    const heading = node.querySelector(\"h1, h2, h3, strong, b\");\n    return normalize(heading ? heading.textContent : \"\");\n  }\n\n  function sampleText(field) {\n    const key = `${field.id || \"\"} ${field.name || \"\"} ${field.placeholder || \"\"}`.toLowerCase();\n    if (/email/.test(key)) return \"bonjour@example.com\";\n    if (/url|site|website|lien/.test(key)) return \"https://example.com/offre-solaire\";\n    if (/phone|tel|mobile/.test(key)) return \"0612345678\";\n    if (/ville|city|localisation|location|region|departement|postal/.test(key)) return \"Paris\";\n    if (/orientation/.test(key)) return \"sud\";\n    if (/keyword|theme|topic|sujet|subject/.test(key)) return \"energie solaire domestique\";\n    if (/titre|title/.test(key)) return \"Simulateur solaire maison\";\n    if (/nom|name|project/.test(key)) return \"Projet Horizon\";\n    if (/description|notes|content|message/.test(key)) return \"Maison individuelle exposee sud avec toiture exploitable.\";\n    return field.placeholder || \"France\";\n  }\n\n  function sampleNumber(field) {\n    const key = `${field.id || \"\"} ${field.name || \"\"}`.toLowerCase();\n    if (/inclinaison|angle|slope/.test(key)) return \"30\";\n    if (/surface|size|m2|sqm/.test(key)) return \"28\";\n    if (/annee|year/.test(key)) return \"2024\";\n    if (/prix|price|budget|cost|amount|montant/.test(key)) return \"12000\";\n    const min = Number(field.min || \"\");\n    const max = Number(field.max || \"\");\n    if (Number.isFinite(min) && Number.isFinite(max) && max >= min) {\n      return String(Math.min(max, Math.max(min, min + Math.round((max - min) * 0.35))));\n    }\n    if (Number.isFinite(min)) return String(Math.max(min, 12));\n    if (Number.isFinite(max)) return String(Math.min(max, 12));\n    return field.value || \"12\";\n  }\n\n  function applySample(field) {\n    const tag = (field.tagName || \"\").toLowerCase();\n    const type = (field.type || \"\").toLowerCase();\n    if (field.disabled) return;\n    if (type === \"hidden\" || type === \"submit\" || type === \"button\" || type === \"reset\" || type === \"image\" || type === \"file\") {\n      return;\n    }\n    const currentValue = normalize(field.value);\n    if (tag === \"select\") {\n      if (currentValue) return;\n      const option = Array.from(field.options || []).find((item) => item.value && !item.disabled) || field.options[0];\n      if (option) field.value = option.value;\n      return;\n    }\n    if (type === \"checkbox\") {\n      if (field.checked) return;\n      field.checked = true;\n      return;\n    }\n    if (type === \"radio\") {\n      if (field.checked) return;\n      field.checked = true;\n      return;\n    }\n    if (type === \"date\") {\n      if (currentValue) return;\n      field.value = \"2026-03-01\";\n      return;\n    }\n    if (type === \"email\") {\n      if (currentValue) return;\n      field.value = \"bonjour@example.com\";\n      return;\n    }\n    if (type === \"url\") {\n      if (currentValue) return;\n      field.value = \"https://example.com/offre-solaire\";\n      return;\n    }\n    if (type === \"tel\") {\n      if (currentValue) return;\n      field.value = \"0612345678\";\n      return;\n    }\n    if (type === \"color\") {\n      if (currentValue) return;\n      field.value = \"#2f855a\";\n      return;\n    }\n    if (type === \"number\" || type === \"range\") {\n      if (currentValue) return;\n      field.value = sampleNumber(field);\n      return;\n    }\n    if (currentValue) return;\n    field.value = sampleText(field);\n  }\n\n  function stamp(status, detail, headline, primary) {\n    if (qaFinished) return;\n    qaFinished = true;\n    if (qaWatchdog) {\n      window.clearTimeout(qaWatchdog);\n      qaWatchdog = null;\n    }\n    const node = marker();\n    node.dataset.status = status;\n    node.dataset.mode = \"native-form\";\n    node.dataset.detail = detail || \"\";\n    node.dataset.headline = headline || \"\";\n    node.dataset.primary = primary || \"\";\n    node.dataset.viewport = window.innerWidth <= 640 ? \"mobile\" : \"desktop\";\n    window.setTimeout(function () {\n      try {\n        window.stop();\n      } catch (_error) {}\n    }, 0);\n  }\n\n  function installModalGuards() {\n    const noop = function () {};\n    const approve = function () { return true; };\n    const empty = function () { return \"\"; };\n    try { window.alert = noop; } catch (_error) {}\n    try { window.confirm = approve; } catch (_error) {}\n    try { window.prompt = empty; } catch (_error) {}\n  }\n\n  function triggerAction(form, action) {\n    try {\n      if (typeof form.requestSubmit === \"function\") {\n        form.requestSubmit(action || undefined);\n        return;\n      }\n    } catch (_error) {}\n    if (action && typeof action.click === \"function\") {\n      action.click();\n      return;\n    }\n    form.dispatchEvent(new Event(\"submit\", { bubbles: true, cancelable: true }));\n  }\n\n  function inspectResult(before, attemptsLeft) {\n    const result = findResult();\n    if (!result) {\n      stamp(\"fail\", \"La zone de resultat est introuvable.\", \"\");\n      return;\n    }\n    const after = resultSignature(result);\n    const text = normalize(result.textContent);\n    if (after && after !== before && text.length >= 24) {\n      const primary = result.querySelector(\"a[href], button[data-href], [data-primary-url]\") || document.querySelector(\"#tool-result a[href]\");\n      stamp(\"pass\", \"Le formulaire natif a mis a jour la zone de resultat.\", resultHeadline(result), primary ? (primary.getAttribute(\"href\") || primary.getAttribute(\"data-primary-url\") || \"\") : \"\");\n      return;\n    }\n    if (attemptsLeft > 0) {\n      window.setTimeout(function () {\n        inspectResult(before, attemptsLeft - 1);\n      }, 250);\n      return;\n    }\n    stamp(\"fail\", \"La zone de resultat n'a pas renvoye de contenu exploitable.\", resultHeadline(result));\n  }\n\n  function runSmoke() {\n    const params = new URLSearchParams(window.location.search);\n    if (params.get(\"__qa\") !== \"functional\") return;\n    qaWatchdog = window.setTimeout(function () {\n      stamp(\"fail\", \"QA smoke timed out before the page reported a usable result.\", \"\");\n    }, 7000);\n    const form = findForm();\n    if (!form) {\n      stamp(\"fail\", \"Le formulaire principal est introuvable.\", \"\");\n      return;\n    }\n    const result = findResult();\n    const before = resultSignature(result);\n    installModalGuards();\n    try {\n      form.querySelectorAll(\"input, select, textarea\").forEach(applySample);\n    } catch (error) {\n      stamp(\"fail\", error && error.message ? `QA smoke sample failed: ${error.message}` : \"QA smoke sample failed before submit.\", \"\");\n      return;\n    }\n    const action = primaryAction(form);\n    try {\n      triggerAction(form, action);\n    } catch (error) {\n      stamp(\"fail\", error && error.message ? `QA smoke submit failed: ${error.message}` : \"QA smoke submit failed.\", \"\");\n      return;\n    }\n    inspectResult(before, 10);\n  }\n\n  window.addEventListener(\"error\", function (event) {\n    const message = event && event.message ? event.message : \"JavaScript runtime error during QA smoke.\";\n    stamp(\"fail\", `QA smoke JS error: ${message}`, \"\");\n  }, { once: true });\n\n  window.addEventListener(\"unhandledrejection\", function (event) {\n    const reason = event && event.reason;\n    const detail = typeof reason === \"string\"\n      ? reason\n      : reason && reason.message\n        ? reason.message\n        : \"Unhandled promise rejection during QA smoke.\";\n    stamp(\"fail\", `QA smoke rejection: ${detail}`, \"\");\n  }, { once: true });\n\n  if (document.readyState === \"loading\") {\n    document.addEventListener(\"DOMContentLoaded\", function () {\n      window.setTimeout(runSmoke, 60);\n    }, { once: true });\n  } else {\n    window.setTimeout(runSmoke, 60);\n  }\n})();\n</script>\n</body>\n</html>",
-    "generation_mode": "direct_html"
-  }
+    "suggested_slug": "outil-d-optimisation-de-profil-linkedin-pour-je-4f98b4f0"
+  },
+  "source_path": "/var/lib/utility-site-studio/data/growth-republish/growth-1779032435734/outil-d-optimisation-de-profil-linkedin-pour-je-4f98b4f0",
+  "deploy_root": "/var/lib/utility-site-studio/data/growth-republish/growth-1779032435734/outil-d-optimisation-de-profil-linkedin-pour-je-4f98b4f0"
 }
